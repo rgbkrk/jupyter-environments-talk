@@ -66,19 +66,101 @@
 	</div></section>
 		
 	<section class="slide"><div>
-		<h2>These guys</h2>
+		<h2>We're These Guys</h2>
 		<img src="pictures/about-orm.png" class="slide-img" style="width: 80%"alt="Typity type type">
 	</div></section>
 
+	<section class="slide"><div>
+		<h2>I'm This Guy</h2>
+		<img src="pictures/oreilly-beta.png" class="slide-img" style="float:right; width: 50%"alt="Typity type type">
+		<ul>
+			<li>Founder of <a href="https://atlas.oreilly.com">Atlas</a>, O'Reilly Media's next generation authoring tool</li>
+			<li>Author of <a href="http://sites.oreilly.com/odewahn/dds-field-guide/">DDS Field Guide</a> and <a href="http://odewahn.github.io/docker-jumpstart/">Docker Jumpstart</a></li>
+			<li>Executive manager for <a href="https://beta.oreilly.com">beta.oreilly.com</a></li>
+			<li>Currently exploring how to produce "next generation content"</li>
+		</ul>
+
+	</div></section>
 
 	<section class="slide"><div>
 		<h2>Authoring with O'Reilly</h2>
+		<img src="pictures/tim-tweet.png" class="slide-img" style="float:right; width: 50%"alt="Typity type type">
 		<ul>
-			<li>Write in the <a href="https://github.com/jupyter/notebook">Notebook</a></li>
-			<li>Use the <a href="https://github.com/rossant/ipymd">ipymd plugin</a> to convert the content to Markdown.</li>
-			<li>Check the Markdown version of the Notebooks into <a href="atlas.oreilly.com">Atlas</a> to collaborate with your editor, reviewers, and the O’Reilly production department.</li>
+			<li>Many options: <a href="http://oreillymedia.github.io/HTMLBook/">HTML</a>, <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc</a>, Markdown, DocBook
+			<li>About 80% of our tech books are written in one of these formats.</li>
+			<li>Tim O'Reilly announced <a href="https://beta.oreilly.com/ideas/jupyter-at-oreilly">full support for Jupyter on May 8.</a></li>
 		</ul>
 	</div></section>
+
+	<section class="slide"><div>
+		<h2>The Process</h2>
+		<ul>
+		  <li>You write in the Notebooks, like always.</li>
+		  <li>You (or we) use <a href="http://cyrille.rossant.net/">Cyrille Rossant</a>’s excellent <a href="https://github.com/rossant/ipymd">ipymd plugin</a> to convert the content to Markdown. (Or, you can even just use Markdown as your native format.)</li>
+		  <li>You check the Markdown version of the Notebooks into <a href="atlas.oreilly.com">Atlas</a> to collaborate with your editor, reviewers, and the O’Reilly production department.</li>
+		  <li>You build a beautiful book.</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Getting Beyond Books</h2>
+		<img src="pictures/new-learning-tools.png" class="slide-img" style="float:right; width: 50%"alt="Typity type type">
+		<ul>
+			<li>Books are great, but they lack the features that makes the Notebook such an amazing experience:
+			    <em>interactivity</em>, <em>immediacy</em>, <em>video</em>, etc.</li>
+			<li>This is what <i>learners</i> (not just <i>readers</i>) expect</li>
+		</ul>
+	</div></section>
+	
+	<section class="slide"><div>
+		<h2>New Content Platform: Jupyter + Docker + tmpnb</h2>
+		<ul>
+			<li><a href="http://jupyter.org/">Jupyter</a>. Other than git and GitHub, we've never authors demand a tool more than Jupyter.</li>
+			<li><a href="https://www.docker.com/">Docker</a>.  Containerizing the notebooks gave us a simple way to package up and deploy the content and all its dependencies.</li>  
+			<li><a href="https://github.com/jupyter/tmpnb">tmpnb</a>. A lightweight system for creating ephemeral sandboxes.  
+		 </ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Version 0.1: Just Enough Math</h2>
+		<img src="pictures/jem-strata.png" class="slide-img" style="float:right; width: 50%"alt="Typity type type">
+		<ul>
+			<li>Hosted Notebooks on Docker+tmpnb for a Strata tutorial.</li>
+			<li>Great concept, but performance was an issue.  (Static assets, etc)</li>
+			<li>Catastrophic failure mode. (No content at all!)</li>
+		</ul>
+	</div></section>
+	
+	<section class="slide"><div>
+		<h2>Thebe: An Embeddable Jupyter Widget</h2>
+		<ul>
+			<li>A widget for Jupyter code cells that can be embedded in static web pages.</li> 
+			<li><a href="https://github.com/oreillymedia/thebe">Thebe</a>.  MIT-licensed plugin @zischwartz based on <a href="https://github.com/minrk/singlecell">minrk/singlecell</a></li>
+			<li>Supports widgets, charts, and other common Jupyter code cell features.</li>
+			<li>Separates serving of static assets from the notebook.</li>
+			<li>Much more graceful failure mode.</li>
+		</ul>
+	</div></section>
+	
+	
+	<section class="slide"><div>
+		<h2>Version 0.5: beta.oreilly.com</h2>
+		<img src="pictures/thebe.png" class="slide-img" style="float:right; width: 50%"alt="Typity type type">
+		<ul>
+		  <li><a href="https://beta.oreilly.com/learning/data-visualization-with-seaborn">Data visualization with Seaborn</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/intro-to-svm">Introduction to Support Vector Machines</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/simple-line-plots-with-matplotlib">Simple Line Plots with Matplotlib</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/three-dimensional-plotting-in-matplotlib">Three-dimensional Plotting in Matplotlib</a></li>
+		  <li><a href="https://beta.oreilly.com/learning/an-illustrated-introduction-to-the-t-sne-algorithm">An illustrated introduction to the t-SNE algorithm</a></li>
+		</ul>
+	</div></section>	
+	
+	<section class="slide"><div>
+		<h2>Version 0.5: beta.oreilly.com</h2>
+		<i>Alternatively, I might have a video here.</i>
+	</div></section>
+		
+	
 	<section class="slide cover" id="Picture"><div>
 		<h2>Author</h2>
 		<img src="pictures/picture.jpg" alt="Typity type type">
