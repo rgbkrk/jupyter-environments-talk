@@ -13,6 +13,30 @@
         <p>Kyle Kelley; Developer at Rackspace, Jupyter/IPython; <a href="https://twitter.com/rgbkrk">@rgbkrk</a></p>
         <p>Andrew Odewahn; CTO O'Reilly Media; <a href="https://twitter.com/odewahn">@odewahn</a></p>
 	</header>
+	<section class="slide cover" id="Cover"><div>
+		<h2>On Demand Analytic and Learning Environments with Jupyter</h2>
+        <p>Kyle Kelley; Developer at Rackspace, Jupyter/IPython; <a href="https://twitter.com/rgbkrk">@rgbkrk</a></p>
+        <p>Andrew Odewahn; CTO O'Reilly Media; <a href="https://twitter.com/odewahn">@odewahn</a></p>
+
+				<style>
+					#Cover h2 {
+						margin:30px 0 0;
+						text-align:center;
+						font-size:90px;
+						color: #fff;
+					}
+					#Cover p {
+						margin:10px 0 0;
+						text-align:center;
+						font-style:italic;
+						font-size:30px;
+						color: #ddd;
+					}
+					#Cover p a {
+					}
+				</style>
+	</div></section>
+
   <section class="slide"><div>
 		<img src="pictures/jupyter-logo.png" alt="Jupyter">
 		<ol>
@@ -21,8 +45,79 @@
 		</ol>
 		<p class="note">Jupyter [ˈdʒuːpɨtər] noun. interactive computing environments.</p>
 	</div></section>
-	
-	<section class="slide cover" id="Cover"><div>
+
+	<section class="slide"><div>
+		<h2>Overview</h2>
+		<ul>
+			<li>Jupyter Environments
+				<ul>
+					<li>Single: Console, Notebook</li>
+					<li>Multi: JupyterHub, tmpnb</li>
+					<li>Future: 😄</li>
+				</ul>
+			</li>
+			<li>Authoring Workflows</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>JupyterHub - Technical Overview</h2>
+		<h3><a href="https://github.com/jupyter/jupyterhub">github.com/jupyter/jupyterhub</a></h3>
+		<ul>
+			<li>Multi-user Hub (Python/Tornado)</li>
+			<li>Configurable HTTP Proxy (nodejs)</li>
+			<li>Spawns notebooks as their own (processes | containers | systems)</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>JupyterHub Deployments</h2>
+		<ul>
+			<li>Computational Models</li>
+			<li>Cal Poly</li>
+			<li><img src="https://www.quantopian.com/assets/logo-old-2x.png" height=32 style="vertical-align: middle" /> Quantopian</li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Authentication</h2>
+		<p>Defaults to PAM/*nix users...
+		<span class="next">While allowing custom authenticators!</span></p>
+		<ul class="next">
+			<li><a href="https://github.com/jupyter/oauthenticator">GitHub OAuth</a></li>
+			<li><a href="https://github.com/yuvipanda/mwoauthenticator">MediaWiki</a></li>
+		</ul>
+	</div></section>
+
+	<section class="slide"><div>
+		<h2>Spawning</h2>
+		<p>Defaults to local notebook processes...
+		<span class="next">While allowing custom spawners!</span></p>
+		<ul class="next">
+			<li><a href="https://github.com/jupyter/dockerspawner">DockerSpawner</a></li>
+			<li><a href="https://github.com/compmodels/jupyterhub-deploy/blob/master/roles/jupyterhub_host/files/swarmspawner.py">SwarmSpawner</a></li>
+			<li><a href="https://github.com/zonca/remotespawner">Remote SSH Spawner</a></li>
+		</ul>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2><a href="https://demohub.jupyter.org">Demo Hub</a></h2>
+	</div></section>
+
+	<section class="slide shout"><div>
+		<h2>Temporary Notebooks</h2>
+	</div></section>
+
+	<section class="slide"><div>
+		<img src="http://blog.docker.com/wp-content/uploads/2013/08/KuDr42X_ITXghJhSInDZekNEF0jLt3NeVxtRye3tqco.png" alt="Dockah">
+		<ol>
+			<li></li>
+			<li></li>
+		</ol>
+	</div></section>
+
+
+	<section class="slide cover" id="Author"><div>
 		<h2>Authoring Workflows with Jupyter</h2>
     <!-- <p>Write, Code, Publish</p> -->
 		<img src="pictures/cover.jpg" alt="">
@@ -31,25 +126,25 @@
 			set slide ID to get needed elements
 			-->
 		<style>
-			#Cover h2 {
+			#Author h2 {
 				margin:30px 0 0;
 				color:#FFF;
 				text-align:center;
 				font-size:70px;
 			}
-			#Cover p {
+			#Author p {
 				margin:10px 0 0;
 				text-align:center;
 				color:#FFF;
 				font-style:italic;
 				font-size:20px;
 			}
-			#Cover p a {
+			#Author p a {
 				color:#FFF;
 			}
 		</style>
 	</div></section>
-	
+
 	<style>
 		.slide-img {
 			display: block;
@@ -58,13 +153,13 @@
 
 		}
 	</style>
-	
+
 	<section class="slide"><div>
 		<h2>Not this guy</h2>
 		<img src="pictures/not-this-guy.png" class="slide-img" style="width: 60%" alt="Typity type type">
 
 	</div></section>
-		
+
 	<section class="slide"><div>
 		<h2>We're These Guys</h2>
 		<img src="pictures/about-orm.png" class="slide-img" style="width: 80%"alt="Typity type type">
@@ -111,13 +206,13 @@
 			<li>This is what <i>learners</i> (not just <i>readers</i>) expect</li>
 		</ul>
 	</div></section>
-	
+
 	<section class="slide"><div>
 		<h2>New Content Platform: Jupyter + Docker + tmpnb</h2>
 		<ul>
-			<li><a href="http://jupyter.org/">Jupyter</a>. Other than git and GitHub, we've never authors demand a tool more than Jupyter.</li>
-			<li><a href="https://www.docker.com/">Docker</a>.  Containerizing the notebooks gave us a simple way to package up and deploy the content and all its dependencies.</li>  
-			<li><a href="https://github.com/jupyter/tmpnb">tmpnb</a>. A lightweight system for creating ephemeral sandboxes.  
+			<li><a href="http://jupyter.org/">Jupyter</a>. Other than git and GitHub, we've never had authors demand a tool more than Jupyter.</li>
+			<li><a href="https://www.docker.com/">Docker</a>.  Containerizing the notebooks gave us a simple way to package up and deploy the content and all its dependencies.</li>
+			<li><a href="https://github.com/jupyter/tmpnb">tmpnb</a>. A lightweight system for creating ephemeral sandboxes.
 		 </ul>
 	</div></section>
 
@@ -130,19 +225,19 @@
 			<li>Catastrophic failure mode. (No content at all!)</li>
 		</ul>
 	</div></section>
-	
+
 	<section class="slide"><div>
 		<h2>Thebe: An Embeddable Jupyter Widget</h2>
 		<ul>
-			<li>A widget for Jupyter code cells that can be embedded in static web pages.</li> 
+			<li>A widget for Jupyter code cells that can be embedded in static web pages.</li>
 			<li><a href="https://github.com/oreillymedia/thebe">Thebe</a>.  MIT-licensed plugin @zischwartz based on <a href="https://github.com/minrk/singlecell">minrk/singlecell</a></li>
 			<li>Supports widgets, charts, and other common Jupyter code cell features.</li>
 			<li>Separates serving of static assets from the notebook.</li>
 			<li>Much more graceful failure mode.</li>
 		</ul>
 	</div></section>
-	
-	
+
+
 	<section class="slide"><div>
 		<h2>Version 0.5: beta.oreilly.com</h2>
 		<img src="pictures/thebe.png" class="slide-img" style="float:right; width: 50%"alt="Typity type type">
@@ -153,14 +248,14 @@
 		  <li><a href="https://beta.oreilly.com/learning/three-dimensional-plotting-in-matplotlib">Three-dimensional Plotting in Matplotlib</a></li>
 		  <li><a href="https://beta.oreilly.com/learning/an-illustrated-introduction-to-the-t-sne-algorithm">An illustrated introduction to the t-SNE algorithm</a></li>
 		</ul>
-	</div></section>	
-	
+	</div></section>
+
 	<section class="slide"><div>
 		<h2>Version 0.5: beta.oreilly.com</h2>
 		<i>Alternatively, I might have a video here.</i>
 	</div></section>
-		
-	
+
+
 	<section class="slide cover" id="Picture"><div>
 		<h2>Author</h2>
 		<img src="pictures/picture.jpg" alt="Typity type type">
@@ -170,12 +265,31 @@
 				}
 		</style>
 	</div></section>
-	
+
 	<section class="slide"><div>
 		<h2>Launch Yours</h2>
 		<pre>
 			<code>$ jupyter notebook</code>
 		</pre>
+	</div></section>
+
+
+	<section class="slide cover" id="questions"><div>
+		<img src="https://farm8.staticflickr.com/7259/7082878349_598d3efcb8_k_d.jpg" alt="white">
+		<h2>Questions?</h2>
+				<p>Kyle Kelley; Developer at Rackspace, Jupyter/IPython; <a href="https://twitter.com/rgbkrk">@rgbkrk</a></p>
+				<p>Andrew Odewahn; CTO O'Reilly Media; <a href="https://twitter.com/odewahn">@odewahn</a></p>
+
+		<style>
+		  #questions {
+				color: white;
+			}
+			#questions img {
+				filter: blur(.5) grayscale(1) invert(1);
+				-webkit-filter: blur(.5) grayscale(1) invert(1);
+			}
+		</style>
+
 	</div></section>
 
 	<p class="badge"><a href="https://github.com/rgbkrk/jupyter-environments-odsc2015">Fork me on Github</a></p>
