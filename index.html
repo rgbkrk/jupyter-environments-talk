@@ -6,8 +6,17 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/shower-ribbon/styles/screen.css">
+
 </head>
 <body class="list">
+	<script src="https://rawgit.com/oreillymedia/thebe/master/static/main-built.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	    $(function(){
+	        new Thebe({url:"http://oreillyorchard.com:8000"});
+	    });
+	</script>
+	
+	
 	<header class="caption">
 		<h1>On Demand Analytic and Learning Environments with Jupyter</h1>
         <p>Kyle Kelley; Developer at Rackspace, Jupyter/IPython; <a href="https://twitter.com/rgbkrk">@rgbkrk</a></p>
@@ -255,6 +264,18 @@
 		  <li><a href="https://beta.oreilly.com/learning/three-dimensional-plotting-in-matplotlib">Three-dimensional Plotting in Matplotlib</a></li>
 		  <li><a href="https://beta.oreilly.com/learning/an-illustrated-introduction-to-the-t-sne-algorithm">An illustrated introduction to the t-SNE algorithm</a></li>
 		</ul>
+	</div></section>
+	
+	<section class="slide"><div>
+		<h2>A quick Demo</h2>
+		<pre data-executable='true'>
+		%matplotlib inline
+		import numpy as np
+		import matplotlib.pyplot as plt
+		import seaborn as sns
+		sns.set()
+		plt.plot(x, np.sin(x), x, np.cos(x));
+		</pre>
 	</div></section>
 
 	<section class="slide"><div>
