@@ -6,16 +6,15 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/shower-ribbon/styles/screen.css">
+	
+	<link rel="stylesheet" href="../assets/thebe.css" type="text/css"/>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://rawgit.com/oreillymedia/thebe/master/static/main-built.js" type="text/javascript" charset="utf-8"></script>
+	
 
 </head>
 <body class="list">
-	<script src="https://rawgit.com/oreillymedia/thebe/master/static/main-built.js" type="text/javascript" charset="utf-8"></script>
-	<script>
-	    $(function(){
-	        new Thebe({url:"http://oreillyorchard.com:8000"});
-	    });
-	</script>
-	
+
 	
 	<header class="caption">
 		<h1>On Demand Analytic and Learning Environments with Jupyter</h1>
@@ -273,6 +272,8 @@
 		import numpy as np
 		import matplotlib.pyplot as plt
 		import seaborn as sns
+		x = np.linspace(0, 10, 1000)
+		plt.plot(x, np.sin(x), x, np.cos(x));
 		sns.set()
 		plt.plot(x, np.sin(x), x, np.cos(x));
 		</pre>
@@ -326,7 +327,14 @@
 		just remove “progress” element.
 		-->
 	<div class="progress"><div></div></div>
+
+
 	<script src="assets/shower-core/shower.min.js"></script>
+	<script>
+	    $(function(){
+	        new Thebe({url:"https://oreillyorchard.com:8000"});
+	    });
+	</script>
 	<!-- Copyright © 2015 Kyle Kelley, Andrew Odewahn -->
 	<!-- Photos by John Carey, fiftyfootshadows.net -->
 </body>
