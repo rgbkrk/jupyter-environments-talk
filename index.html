@@ -6,11 +6,8 @@
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="assets/shower-ribbon/styles/screen.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://rawgit.com/oreillymedia/thebe/master/static/main-built.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body class="list">
-
 
 	<header class="caption">
 		<h1>On Demand Analytic and Learning Environments with Jupyter</h1>
@@ -263,81 +260,7 @@
 
 	<section class="slide"><div>
 		<h2>A quick Demo</h2>
-
-		<div id="thebeDemo"></div>
-
-		<template id="thebeTemplate">
-			<style>
-			div.thebe_controls {
-			  margin-top: 5px;
-			  margin-bottom: 20px;
-			}
-			div.thebe_controls button {
-			  background-color: #eaeaea;
-			  font-size: 1em;
-			  padding: 5px 20px;
-			}
-			div.kernel_controls {
-			  padding: 20px;
-			  background: rgba(200, 200, 200, 0.4);
-			  max-width: 600px;
-			  text-align: center;
-			  margin: 10px auto;
-			}
-			div.cell,
-			p,
-			pre,
-			figure,
-			ul,
-			ol,
-			iframe {
-			  max-width: 600px;
-			  margin: 10px auto;
-			}
-			iframe {
-			  display: block;
-			}
-			div.cell div.input {
-			  border: 1px solid #c8c8c8;
-			  padding: 10px;
-			}
-			h1,
-			h2,
-			h3,
-			h4,
-			h5,
-			h6 {
-			  text-align: center;
-			}
-			</style>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-			<script src="https://rawgit.com/oreillymedia/thebe/master/static/main-built.js" type="text/javascript" charset="utf-8"></script>
-
-			<pre data-executable='true'>
-	%matplotlib inline
-	import numpy as np
-	import matplotlib.pyplot as plt
-	import seaborn as sns
-	x = np.linspace(0, 10, 1000)
-	plt.plot(x, np.sin(x), x, np.cos(x));
-	sns.set()
-	plt.plot(x, np.sin(x), x, np.cos(x));
-			</pre>
-
-			<script>
-					$(function(){
-							new Thebe({url:"https://oreillyorchard.com:8000"});
-					});
-			</script>
-		</template>
-
-		<script>
-		var shadow = document.querySelector('#thebeDemo').createShadowRoot();
-		var template = document.querySelector('#thebeTemplate');
-		var clone = document.importNode(template.content, true);
-		shadow.appendChild(clone);
-		</script>
-
+		<iframe src="thebe.html" style="position: absolute; height: 100%; border: none"></iframe>
 	</div></section>
 
 	<section class="slide"><div>
