@@ -12,15 +12,20 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-x = np.linspace(0, 10, 1000)
-plt.plot(x, np.sin(x), x, np.cos(x));
-sns.set()
-plt.plot(x, np.sin(x), x, np.cos(x));
+
+from IPython.html.widgets import interact
+
+@interact
+def explore(n=10):
+    x = np.linspace(0, n, 1000)
+    plt.plot(x, np.sin(x), x, np.cos(x));
+    sns.set()
+    plt.plot(x, np.sin(x), x, np.cos(x));
 	</pre>
 
 	<script>
 	$(function(){
-	  new Thebe({url:"https://oreillyorchard.com:8000"});
+	  new Thebe({url:"https://tmp23.tmpnb.org", kernel_name: "python3"});
 	});
 	</script>
 </body>
