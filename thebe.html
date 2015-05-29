@@ -23,6 +23,20 @@ def explore(n=10):
     plt.plot(x, np.sin(x), x, np.cos(x));
 	</pre>
 
+  <div class="about">
+    <h3>About</h3>
+    <p>
+      The code runs <a href="http://jupyter.org">Jupyter</a> kernels inside of Docker containers,
+      <a href="https://github.com/jupyter/tmpnb">through a temporary notebook system</a>.
+      The frontend exposed here is <a href="https://github.com/oreillymedia/thebe">O'Reilly Media's Thebe</a>.
+    </p>
+    <p>
+      There is no network access and operations are limited. If you find a bug, <a href="https://github.com/rgbkrk/share-cell/issues">report it</a>. Change the code to your hearts content.
+    </p>
+    <p>Hosting for the kernels is provided by <a href="https://developer.rackspace.com">developer.rackspace.com</a>.
+    <h4>Want to share code? Try <a href="https://lambdaops.com/share-cell">Share Cell</a>.</h4>
+  </div>
+
 	<script>
 	$(function(){
 	  new Thebe({url:"https://tmp23.tmpnb.org", kernel_name: "python3"});

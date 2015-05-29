@@ -262,7 +262,7 @@ iframe {
   display: block;
 }
 
-.share-cell {
+.about {
   width: 500px;
   margin: 0 auto;
   background-color: #F5F5F5;
@@ -270,20 +270,20 @@ iframe {
   font-size: 14px;
 }
 
-.share-cell p {
+.about p {
   line-height: 1.6em;
 }
-.share-cell p:last-child {
+.about p:last-child {
   margin-bottom: 0;
 }
 
-.share-cell a {
+.about a {
   color: #404040;
   text-decoration: none;
   border-bottom: 1px solid #D7D7D7;
 }
 
-.share-cell h2 {
+.about h2 {
   margin-top: 10px;
 }
 
