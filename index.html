@@ -112,14 +112,14 @@
 	</div></section> 
 
   <section class="slide shout"><div>
-      <h2>Computational narratives</h2>
+      <h2>Computational narratives 📊</h2>
   </div></section> 
 
   <section class="slide"><div>
       <h2>Computational Narrative Contexts</h2>
       <ul>
         <li>Exploratory data analysis</li>
-        <li>Development</li>
+        <li>Developing software</li>
         <li>API exploration</li>
         <li>Technical papers</li>
         <li>Reports for leadership</li>
@@ -139,16 +139,16 @@
       <h2>Reproducibility</h2>
       <ul>
         <li>Code, prose (narrative, wrapped in a document)<ul>
-          <li>IPython/Jupyter notebooks</li>
-          <li>RMarkdown</li>
+          <li>IPython/Jupyter notebooks, RMarkdown</li>
+          <li>Version control (e.g. git!)</li>
         </ul></li>
+        <li>Data</li>
         <li>Execution Environments<ul>
             <li>VMs</li>
             <li>Containers (e.g. Docker)</li>
             <li>Virtualenv and conda environments</li>
           </ul>
         </li>
-        <li>Data</li>
       </ul>
   </div></section>
 
@@ -178,25 +178,26 @@
   <section class="slide"><div>
 		<img src="pictures/jupyter-logo.png" alt="Jupyter">
 		<ol>
-			<li>Formerly IPython</li>
-			<li>Extending on language agnostic parts</li>
+      <li>Common tooling amongst languages (beyond 🐍)
+			<li>Open formats and protocols</li>
+      <li>Active community</li>
 		</ol>
-		<p class="note">Jupyter [ˈdʒuːpɨtər] noun. interactive computing environments.</p>
+		<p class="note">Jupyter [ˈdʒuːpɨtər] noun. interactive reproducible computing environments.</p>
 	</div></section>
 
+
+  <!-- Talk about some of the team and where it is based -->
+
 	<section class="slide"><div>
-		<h2>Overview</h2>
+		<h2>Jupyter Environments</h2>
 		<ul>
-			<li>Jupyter Environments
-				<ul>
-					<li>Single: Console, Notebook</li>
-					<li>Multi: JupyterHub, tmpnb</li>
-					<li>Future: 😄</li>
-				</ul>
-			</li>
-			<li>Authoring Workflows</li>
+			<li>Single: Console, Notebook</li>
+			<li>Multi: JupyterHub, tmpnb</li>
+		  <li>Future: Realtime, alternative frontends</li>
 		</ul>
 	</div></section>
+
+  <!-- A bit on the notebook -->
 
 	<section class="slide"><div>
 		<h2>JupyterHub - Technical Overview</h2>
@@ -206,6 +207,11 @@
 			<li>Configurable HTTP Proxy (nodejs)</li>
 			<li>Spawns notebooks as their own (processes | containers | systems)</li>
 		</ul>
+	</div></section>
+  
+	<section class="slide shout"><div>
+		<h2><a href="https://demohub.jupyter.org">Demo Hub</a>
+    <a href="http://bit.ly/odscdemo">bit.ly/odscdemo</a></h2>
 	</div></section>
 
 	<section class="slide"><div>
@@ -240,10 +246,6 @@
 		</ul>
 	</div></section>
 
-	<section class="slide shout"><div>
-		<h2><a href="https://demohub.jupyter.org">Demo Hub</a>
-    <a href="http://bit.ly/odscdemo">bit.ly/odscdemo</a></h2>
-	</div></section>
 
 
 	<section class="slide"><div>
@@ -382,7 +384,7 @@
 	<section class="slide"><div>
 		<h2>Thebe: Jupyter Cells As a Service</h2>
 		<ul>
-			<li>A widget for Jupyter code cells that can be embedded in static web pages.</li>
+			<li>Jupyter code cells that can be embedded in static web pages.</li>
 			<li><a href="https://github.com/oreillymedia/thebe">Thebe</a>.  MIT-licensed plugin <a href="https://twitter.com/zischwartz">@zischwartz</a> based on <a href="https://github.com/minrk/singlecell">minrk/singlecell</a></li>
 			<li>Supports widgets, charts, and other common Jupyter code cell features.</li>
 			<li>Separates serving of static assets from the notebook.</li>
